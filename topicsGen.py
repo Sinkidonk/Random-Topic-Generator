@@ -7,16 +7,26 @@ Created on Tue Feb  9 14:01:25 2021
 
 import tkinter as tk
 
+newtopic = "h"
+
+def newTopic():
+    greeting.config(text="hello")
+    pass
+
+topic = str("Topic")
+
 window = tk.Tk()
 greeting = tk.Label(
-    text="Hello,Tkinter",
+    text="Hi",
+    textvariable=topic,
     fg="white",
     bg="black",
-    width=10,
+    width=30,
     height=10
 )
 button = tk.Button(
     text="New Topic!",
+    command=newTopic,
     width=25,
     height=5,
     bg="blue",
